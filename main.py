@@ -1,5 +1,6 @@
 def main(event):
-  return "Hello Wolrd"
+    return "Hello World!"
 
-if _name_== "_main_":
-  main(None)
+
+if __name__ == "__main__":
+    main(None)
