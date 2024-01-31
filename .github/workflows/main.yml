@@ -15,3 +15,14 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  Explore-GitHub-Actions2:
+    runs-on: ubuntu-latest
+    needs: Explore-Github-Actions
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v
+      - name: List files in repository
+        run: |
+          ls -la ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+  
